@@ -1,5 +1,5 @@
 # Privacy Policy
-**Effective:** 2025-01-01
+**Effective:** 2025-09-30
 
 **Who we are.** Mimi (“we”, “our”, “us”) builds tools to help two people find fair meeting spots.
 
@@ -25,6 +25,6 @@
 
 **Children.** Not directed to children under 13.
 
-**Contact.** privacy@mimiapp.example
+**Contact.** aymankarim00@gmail.com
 
 We may update this policy; we’ll change the “Effective” date above.
