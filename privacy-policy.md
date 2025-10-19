@@ -14,7 +14,7 @@
 
 **Retention.**
 - We do **not** persist addresses or queries on our servers.
-- 
+
 **Sharing.**
 - With **Google Maps Platform** (as your service provider) to provide location results.
 - With **Cloudflare** (as our edge provider) to deliver the service and mitigate abuse.
