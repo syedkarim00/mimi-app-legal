@@ -13,8 +13,8 @@
 - To protect our service (abuse prevention, rate limits).
 
 **Retention.**
-- We do **not** persist addresses or queries on our servers beyond short-lived logs needed for security. Our logs are rotated and kept **≤ 24 hours** (target) unless needed to investigate abuse.
-
+- We do **not** persist addresses or queries on our servers.
+- 
 **Sharing.**
 - With **Google Maps Platform** (as your service provider) to provide location results.
 - With **Cloudflare** (as our edge provider) to deliver the service and mitigate abuse.
