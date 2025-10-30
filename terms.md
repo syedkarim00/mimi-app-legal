@@ -8,6 +8,6 @@ By using Mimi (the “Service”), you agree:
 - **Third parties.** The Service uses Google Maps Platform; their terms may also apply.
 - **Termination.** We may suspend or terminate for abuse or legal reasons.
 
-**Contact.** aymankarim00@gmail.com
+**Contact.** mimimeetinmiddle@gmail.com
 
 We may update these terms; we’ll change the “Effective” date above.
