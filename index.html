@@ -1,3 +1,88 @@
-<a href="https://syedkarim00.github.io/mimi-app-legal/privacy-policy">Privacy Policy</a><br/>
-<a href="https://syedkarim00.github.io/mimi-app-legal/terms">Terms</a><br/>
-<a href="https://syedkarim00.github.io/mimi-app-legal/support">Support</a><br/>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Mimi — Legal & Support</title>
+    <style>
+      :root {
+        --bg: #0b0b0c;
+        --panel: #141417;
+        --text: #f6f6f8;
+        --muted: #b7b7c0;
+        --accent: #b05cff; /* Mimi-ish mauve */
+        --accent-2: #8e44ff;
+        --radius: 16px;
+      }
+      @media (prefers-color-scheme: light) {
+        :root { --bg:#f8f8fb; --panel:#ffffff; --text:#0b0b0c; --muted:#4b4b55; }
+      }
+      html, body { height: 100%; }
+      body {
+        margin: 0; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+        background: radial-gradient(1200px 800px at 80% -10%, rgba(176,92,255,0.15), transparent 60%),
+                    radial-gradient(1200px 800px at -10% 110%, rgba(142,68,255,0.12), transparent 60%),
+                    var(--bg);
+        color: var(--text);
+        display: grid; place-items: center; padding: 24px;
+      }
+      .card {
+        width: min(680px, 100%);
+        background: linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0.02));
+        backdrop-filter: blur(6px);
+        border: 1px solid rgba(255,255,255,0.08);
+        border-radius: var(--radius);
+        box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+        padding: clamp(20px, 3vw, 36px);
+      }
+      .logo {
+        display: flex; align-items: center; justify-content: center;
+        padding: 10px 0 24px; margin-bottom: 8px;
+      }
+      .logo img { width: clamp(72px, 18vw, 120px); height: auto; display: block; }
+      h1 { font-size: clamp(24px, 3.6vw, 34px); margin: 0 0 8px; letter-spacing: 0.2px; }
+      p.lead { margin: 0 0 22px; color: var(--muted); font-size: clamp(14px, 1.8vw, 16px); }
+      .links { display: grid; gap: 12px; margin-top: 12px; }
+      .links a {
+        text-decoration: none;
+        padding: 14px 16px;
+        border-radius: 12px;
+        border: 1px solid rgba(255,255,255,0.12);
+        background: linear-gradient(180deg, rgba(176,92,255,0.15), rgba(176,92,255,0.05));
+        color: var(--text);
+        font-weight: 600;
+        transition: transform .08s ease, background .2s ease, border-color .2s ease;
+      }
+      .links a:hover { transform: translateY(-1px); border-color: rgba(176,92,255,0.55); }
+      .links a:active { transform: translateY(0); }
+      footer { margin-top: 22px; color: var(--muted); font-size: 12px; text-align: center; }
+      .sr-only { position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,1px,1px); white-space:nowrap; border:0; }
+    </style>
+  </head>
+  <body>
+    <main class="card" role="main">
+      <div class="logo">
+        <!-- Replace the src with your real path once added to the repo -->
+        <img src="assets/mimi-logo.svg" alt="Mimi logo" />
+      </div>
+
+      <h1>Legal & Support</h1>
+      <p class="lead">Helpful links for privacy, terms, and getting support.</p>
+
+      <nav class="links" aria-label="Legal and support links">
+        <a href="https://syedkarim00.github.io/mimi-app-legal/privacy-policy">Privacy Policy</a>
+        <a href="https://syedkarim00.github.io/mimi-app-legal/terms">Terms</a>
+        <a href="https://syedkarim00.github.io/mimi-app-legal/support">Support</a>
+      </nav>
+
+      <footer>
+        © <span id="y"></span> Mimi
+      </footer>
+    </main>
+
+    <script>
+      // Light JS just to keep the year current
+      document.getElementById('y').textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
