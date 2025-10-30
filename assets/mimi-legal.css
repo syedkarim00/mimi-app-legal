@@ -1,0 +1,23 @@
+:root{
+--bg:#0b0b0c; --panel:#141417; --text:#f6f6f8; --muted:#b7b7c0; --accent:#b05cff; --accent-2:#8e44ff; --radius:16px;
+}
+@media (prefers-color-scheme: light){
+:root{ --bg:#f8f8fb; --panel:#ffffff; --text:#0b0b0c; --muted:#4b4b55; }
+}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{margin:0; font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial; background:radial-gradient(1200px 800px at 80% -10%, rgba(176,92,255,.15), transparent 60%), radial-gradient(1200px 800px at -10% 110%, rgba(142,68,255,.12), transparent 60%), var(--bg); color:var(--text);}
+.main{min-height:100%; display:grid; place-items:center; padding:24px}
+.card{width:min(820px,100%); background:linear-gradient(180deg,rgba(255,255,255,.04),rgba(255,255,255,.02)); backdrop-filter:blur(6px); border:1px solid rgba(255,255,255,.08); border-radius:var(--radius); box-shadow:0 10px 30px rgba(0,0,0,.25); padding:clamp(20px,3vw,36px)}
+.logo{display:flex; align-items:center; justify-content:center; padding:8px 0 20px}
+.logo img{width:clamp(72px,18vw,120px); height:auto; display:block}
+.header h1{font-size:clamp(24px,3.6vw,34px); margin:0 0 8px}
+.header p{margin:0 0 18px; color:var(--muted)}
+.nav{display:flex; gap:10px; flex-wrap:wrap; margin:6px 0 18px}
+.nav a{text-decoration:none; padding:10px 12px; border-radius:12px; border:1px solid rgba(255,255,255,.12); background:linear-gradient(180deg, rgba(176,92,255,.15), rgba(176,92,255,.05)); color:var(--text); font-weight:600; transition:transform .08s ease, border-color .2s ease}
+.nav a:hover{transform:translateY(-1px); border-color:rgba(176,92,255,.55)}
+.content{line-height:1.6}
+.content h2{margin-top:22px}
+.content a{color:var(--accent)}
+footer{margin-top:22px; color:var(--muted); font-size:12px; text-align:center}
+.prose{max-width:70ch}
