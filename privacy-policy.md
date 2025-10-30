@@ -25,6 +25,6 @@
 
 **Children.** Not directed to children under 13.
 
-**Contact.** aymankarim00@gmail.com
+**Contact.** mimimeetinmiddle@gmail.com
 
 We may update this policy; we’ll change the “Effective” date above.
